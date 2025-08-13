@@ -1,0 +1,126 @@
+body, html {
+  height: 100%;  /* Ensure the body and html take the full height of the viewport */
+  margin: 0;
+}
+
+.login {
+background-color: #1D2041;
+  background-size: cover;  /* Cover the entire viewport with the background image */
+  background-position: center; /* Center the background image */
+  width: 100%; /* Full width for the background container */
+  min-height: 100vh; /* Full height for the background container */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center; /* Center content vertically */
+}
+
+.login-form {
+  width: 450px; /* Set the width of the login form */
+  padding: 20px;
+  background-color: transparent; /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 150px; /* Space from the right edge */
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.text-input1 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.text-input::placeholder {
+  color: #888;
+}
+
+.mt-2 {
+  margin-top: 15px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-align: start;
+}
+ .citi-logo {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+        position: relative;
+        z-index: 2;
+    }
+    .citi-subtitle {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        font-weight: 400;
+        position: relative;
+        z-index: 2;
+    }
+     .citi-header {
+        background: linear-gradient(135deg, var(--citi-blue) 0%, var(--citi-light-blue) 50%, var(--citi-navy) 100%);
+        padding: 2.5rem 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 10px rgba(0, 102, 178, 0.4);
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    .citi-header::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+      
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: headerGlow 4s ease-in-out infinite alternate;
+    }
+    @keyframes headerGlow {
+        0% { transform: rotate(0deg) scale(1); }
+        100% { transform: rotate(360deg) scale(1.1); }
+    }

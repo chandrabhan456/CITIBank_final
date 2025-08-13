@@ -1,0 +1,100 @@
+body {
+ 
+  font-family: 'Arial', sans-serif; /* Change font for a modern look */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Set body height to full viewport height */
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.card-container {
+  perspective: 1000px;
+  display: inline-block;
+  /* Removed margin to keep it perfectly centered */
+}
+
+.card {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-back {
+  background-color: #e0e0e0;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.black-bar {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+}
+
+.signature {
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  position: relative;
+  margin: 10px 0;
+}
+
+.signature-text {
+  font-size: 8px;
+  color: #242424;
+  position: absolute;
+  top: -12px;
+}
+
+.signature-box {
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #555;
+}
+
+.card-number, .card-valid, .card-holder {
+  margin: 2px 0;
+}
